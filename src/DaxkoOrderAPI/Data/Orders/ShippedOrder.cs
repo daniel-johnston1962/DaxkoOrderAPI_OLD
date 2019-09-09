@@ -12,6 +12,7 @@ namespace DaxkoOrderAPI.Data.Orders
         public long ID { get; set; }
 
         public Guid ShippedOrderID { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime CreatedDateTime { get; set; }
     }
 }
