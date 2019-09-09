@@ -13,7 +13,9 @@ namespace DaxkoOrderAPI.Data.Orders
 
         public string Description { get; set; }
         public decimal Price { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public bool IsActive { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime CreatedDateTime { get; set; }
     }
 }
