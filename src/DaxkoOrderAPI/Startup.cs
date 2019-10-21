@@ -79,6 +79,7 @@ namespace DaxkoOrderAPI
             app.UseCors(
                 options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()
             );
+            app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint($"../swagger/{ApplicationVersion}/swagger.json", $"{ApplicationName} {ApplicationVersion}");
