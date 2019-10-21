@@ -34,7 +34,7 @@ GO
 
 CREATE TABLE [Daxko].[Orders].[ShippedOrder](
 	[ID] [bigint] IDENTITY(1,1) NOT NULL PRIMARY KEY,
-	[ShippedOrderID] [uniqueidentifier] IDENTITY(1,1) NOT NULL,
+	[ShippedOrderID] [uniqueidentifier] NOT NULL,
 	[CreatedDateTime] [datetime] NOT NULL  CONSTRAINT [df_OrderDetail_CreatedDateTime]  DEFAULT (getdate())
 )
 
